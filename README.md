@@ -1,7 +1,9 @@
 # File Description
 k_file_xx.c were all forked from https://github.com/binsec/hade/tree/master/experimental_data/src/secretFinding/for  
 k_file_xx.elf were compiled by clang: clang -O0 xx.c  
-main.py is a deobfuscation script, you can use it like:  
+main.py is a deobfuscation script
+# Usage
+you can use it like:  
 pypy3 main.py 3_file_22.elf //I prefer to use pypy to speed up Angr  
 // Because I use some tricks to automatically find the "success" branch(the basic block which call puts function), so you don't need to specify the secret branch addr.  
 The output is:  
